@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock me Burger</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/style-burgers.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <main>  
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <h1>Resumo do pedido:</h1>
+            <ul id="lista2"></ul>
+            <div class="pagamento">
+                <div class="formas">
+                    <h2>Formas de pagamento:</h2>
+                    <input type="radio" name="pag" id="" checked> Débito <br>
+                    <input type="radio" name="pag" id=""> Crédito <br>
+                    <input type="radio" name="pag" id=""> PIX <br>
+                    <input type="radio" name="pag" id=""> Dinheiro (dirigir-se ao caixa) <br>
+                </div>
+                <div class="valor">
+                    <p>R$</p>
+                    <div id="tot2">0.00</div>
+                </div>
+            </div>
+            <button id="confirmar">CONFIRMAR</button>
+        </div>
+        <div class="nav">
+            <a href="/index.html">
+                <img src="/img/logo.png" alt="">
+            </a>
+            <h1>
+                Cardápio
+            </h1>
+        </div>
+        <section class="produtos">
+            <div class="box-1" id="01">
+                <div class="nomePreco">
+                    <h4>Stage Burger</h4>
+                    <p>R$20</p>
+                </div>
+                <div class="descricao">
+                    <p>Pão, tomate, cebola, burger, queijo, bacon, molho especial, ovo e alface.</p>
+                </div>
+                <div class="img">
+                    <img src="/img/burger1.png" alt="">
+                </div>
+                <div class="maisMenos">
+                    <button id="menos"><i class="bi bi-dash-circle-fill"></i></button>
+                    <input type="text" id="qtd" value="0" disabled>
+                    <button id="mais"><i class="bi bi-plus-circle-fill"></i></button>
+                </div>
+                <div class="adicionar">
+                    <button id="addStage">ADICIONAR</button>
+                </div>
+            </div>
+            <div class="box-1" id="02">
+                <div class="nomePreco">
+                    <h4>Cheeseburger</h4>
+                    <p>R$16</p>
+                </div>
+                <div class="descricao">
+                    <p>Pão, burger e queijo.</p><br>
+                </div>
+                <div class="img">
+                    <img src="/img/burger2.png" alt="">
+                </div>
+                <div class="maisMenos">
+                    <button id="menos" class="me02"><i class="bi bi-dash-circle-fill"></i></button>
+                    <input type="text" id="qtd" value="0" class="qtd02" disabled>
+                    <button id="mais" class="ma02"><i class="bi bi-plus-circle-fill"></i></button>
+                </div>
+                <div class="adicionar">
+                    <button id="addCheeseburger">ADICIONAR</button>
+                </div>
+            </div>
+            <div class="box-1" id="03">
+                <div class="nomePreco">
+                    <h4>Aussie Burger</h4>
+                    <p>R$22</p>
+                </div>
+                <div class="descricao">
+                    <p>Pão, cebola caramelizada, burger, queijo cheddar, bacon e barbecue.</p>
+                </div>
+                <div class="img" id="aussie">
+                    <img src="/img/burger3.png" alt="">
+                </div>
+                <div class="maisMenos">
+                    <button id="menos" class="me03"><i class="bi bi-dash-circle-fill"></i></button>
+                    <input type="text" id="qtd" value="0" class="qtd03" disabled>
+                    <button id="mais" class="ma03"><i class="bi bi-plus-circle-fill"></i></button>
+                </div>
+                <div class="adicionar">
+                    <button id="addAussie">ADICIONAR</button>
+                </div>
+            </div>
+            <div class="box-1" id="04">
+                <div class="nomePreco">
+                    <h4>Chicken Burger</h4>
+                    <p>R$20</p>
+                </div>
+                <div class="descricao">
+                    <p>Pão, cebola roxa, chickenburger, queijo, bacon, molho e alface.</p>
+                </div>
+                <div class="img">
+                    <img src="/img/burger4.png" alt="">
+                </div>
+                <div class="maisMenos">
+                    <button id="menos" class="me04"><i class="bi bi-dash-circle-fill"></i></button>
+                    <input type="text" id="qtd" value="0" class="qtd04" disabled>
+                    <button id="mais" class="ma04"><i class="bi bi-plus-circle-fill"></i></button>
+                </div>
+                <div class="adicionar">
+                    <button id="addChicken">ADICIONAR</button>
+                </div>
+            </div>
+            <div class="box-1" id="05">
+                <div class="nomePreco">
+                    <h4>Batata Frita</h4>
+                    <p>R$8</p>
+                </div>
+                <div class="descricao">
+                    <p>Batata Frita <br>(acompanha maionese da casa).</p>
+                </div>
+                <div class="img">
+                    <img src="/img/batata.png" alt="">
+                </div>
+                <div class="maisMenos">
+                    <button id="menos" class="me05"><i class="bi bi-dash-circle-fill"></i></button>
+                    <input type="text" id="qtd" value="0" class="qtd05" disabled>
+                    <button id="mais" class="ma05"><i class="bi bi-plus-circle-fill"></i></button>
+                </div>
+                <div class="adicionar">
+                    <button id="addFries">ADICIONAR</button>
+                </div>
+            </div>
+            <div class="box-1" id="06">
+                <div class="nomePreco">
+                    <h4>Refrigerante</h4>
+                    <p>R$6</p>
+                </div>
+                <div class="descricao">
+                    <p>Coca-Cola, Coca-Zero, Fanta Laranja, Schweppes ou Kuat.</p>
+                </div>
+                <div class="img" id="refri">
+                    <img class="refri" src="/img/refri.png" alt="">
+                </div>
+                <div class="maisMenos">
+                    <button id="menos" class="me06"><i class="bi bi-dash-circle-fill"></i></button>
+                    <input type="text" id="qtd" value="0" class="qtd06" disabled>
+                    <button id="mais" class="ma06"><i class="bi bi-plus-circle-fill"></i></button>
+                </div>
+                <div class="adicionar">
+                    <button id="addDrink">ADICIONAR</button>
+                </div>
+            </div>
+            
+            
+        </section>
+        <div class="tot">
+            <h2>VALOR TOTAL:</h2>
+            <div class="resumo">
+                <ul id="lista">
+                </ul>
+            </div>
+            <p>R$</p>
+            <div id="tot">0.00</div>
+        </div>
+
+        <div class="finalizar">
+            <div>
+                <button id="reset">REFAZER PEDIDO</button>
+            </div>
+            <div class="pagar">
+                <button id="pagar">PAGAR</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Entre em contato:
+        </p>
+        <a href="contato.html">&copy;André Falcão</a>
+    </footer>
+</body>
+</html>

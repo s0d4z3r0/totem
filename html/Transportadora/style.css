@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root{
+    --fonte-principal: 'Oswald', sans-serif;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fonte-principal);
+}
+
+
+.header{
+    background-color: rgb(28, 34, 45, .7);
+}
+.bgHeader{
+    border: 1px solid white;
+    background-image: url(img/bgHeader.jpg);
+    position: relative;
+    background-size: cover;
+    height: 350px;
+    filter: grayscale(.8);
+    z-index: -1;
+}
+nav{
+    margin-top: -350px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 6vh;
+    padding: 15px;
+}
+
+.imgBgHeader{
+    border-radius: 50px;
+    background-image: url(img/283.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    margin-top: -10px;
+    opacity: 0.8;
+}
+.imgBgHeader:hover{
+    filter:brightness(100);
+    opacity: 1;
+    transition: 1s;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+}
+
+.menu a, .socialMedia a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+    font-size: 20px;
+}
+
+.menu a:hover, .socialMedia a:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.socialMedia{
+    display: flex;
+    gap: 10px;
+}
+
+#fb{
+    background-image: url(img/icon/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+#twt{
+    background-image: url(img/icon/twitter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+#rss{
+    background-image: url(img/icon/rss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+#ig{
+    background-image: url(img/icon/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+#email{
+    background-image: url(img/icon/gmail.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+
+.textHeader{
+    color: white;
+    text-align: center;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textHeader button{
+    margin-top: 30px;
+    padding: 6px;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comprarLerMais{
+    width: 340px;
+    display: flex;
+}
+
+button#ler{
+    font-family: var(--fonte-principal);
+    border-radius: 5px;
+    color: white;
+    padding: 6px 41px;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255, 0);
+    cursor: pointer;
+}
+button#ler:hover{
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255, 1);
+    color: rgb(0, 0, 0, 1);
+    transition: .3s;
+}
+
+button#adquirir{
+    border: none;
+    background-color: red;
+}
+button#adquirir:hover{
+    background-color: rgb(124, 2, 2);
+    transition: .3s;
+}
+
+
+.OLA{
+    display: flex;
+    margin-top: -0.6%;
+    height: 35vh;
+}
+
+.oceano, .logistica, .aereo{
+    color: white;
+    padding: 2em;
+}
+
+.oceano h3, .logistica h3, .aereo h3{
+    margin-bottom: 1em;
+}
+.oceano p, .logistica p, .aereo p{
+    margin-bottom: 3em;
+}
+
+.imgs{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+.bgs{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+
+.imgOceano{
+    background-image: url(img/oceano.jpg);
+    background-size: cover;
+    width: 34%;
+    filter: grayscale();
+}
+.bgOceano{
+    background-color: rgb(60, 76, 89, .5);
+    width: 34%;
+    margin-right: -0.5%;
+}
+
+.imgLogistica{
+    background-image: url(img/logistica.jpg);
+    background-size: cover;
+    width: 34%;
+}
+.bgLogistica{
+    background-color: rgb(255, 0, 0, .5);
+    width: 34%;
+    margin-left: 0.5%;
+}
+
+.imgAereo{
+    background-image: url(img/aereo.jpg);
+    background-size: cover;
+    width: 34%;
+}
+.bgAereo{
+    background-color: rgb(0, 191, 255, .5);
+    width: 34%;
+}
+
+div.rastreio{
+    background-color: #11181b;
+    text-align: center;
+    display: flex;
+    padding: 2em;
+
+}
+
+.rastreio input{
+    padding: .3em;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 30%;
+    font-style: var(--fonte-principal);
+    font-size: 18px;
+    appearance: textfield;
+    outline: none;
+    background-color: #162327;
+    color: #7d8385;
+    margin-right: 0%;
+}
+
+.rastreio button{
+    width: 10%;
+    margin-left: 0%;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    cursor: pointer;  
+}
+
+.rastreio button:hover{
+    background-color: rgb(124, 2, 2);
+    transition: .3s;
+}
+
+
+.pergunta{
+    text-align: center;
+    margin: 8%;
+    margin-top: 10%;
+}
+
+.pergunta h3{
+    font-size: 36px;
+}
+.pergunta p{
+    font-size: 28px;
+}
+
+div.razoes{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 2em 3em;
+    gap: 2em;
+    margin-bottom: 10%;
+}
+.texto h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.texto p{
+    font-size: 18px;
+}
+
+.custom{
+    display: flex;
+    gap: 25px;
+}
+
+.imgCustom{
+    width: 150px;
+    height: 60px;
+    background-image: url(/img/icon/custom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pagamento{
+    display: flex;
+    gap: 25px;
+}
+
+.imgPagamento{
+    width: 150px;
+    height: 60px;
+    background-image: url(/img/icon/pagamento.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gerenciamento{
+    display: flex;
+    gap: 25px;
+}
+
+.imgGerenciamento{
+    width: 150px;
+    height: 60px;
+    background-image: url(/img/icon/gerenciar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.solucao{
+    display: flex;
+    gap: 25px;
+}
+
+.imgSolucao{
+    width: 150px;
+    height: 60px;
+    background-image: url(/img/icon/regular.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.galeria{
+    height: 400px;
+    background-color: #efefef;
+    display: flex;
+    padding: 3%;
+
+}
+
+.imagemGaleria1{
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    margin-right: -4%;
+}
+.imagemGaleria2{
+    background-image: url(img/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+.imagemGaleria3{
+    background-image: url(img/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    margin-left: -4%;
+}
+
+.galeria p{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1em;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+footer{
+    margin: 5em 0em 1em 0em;
+    text-align: center;
+}
