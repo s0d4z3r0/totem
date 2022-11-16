@@ -17,7 +17,7 @@ body{
     background-color: black;
 }
 .foto{
-    background-image: url(/img/perfil.jpg);
+    background-image: url(../img/perfil.jpg);
     background-size: cover;
     border-radius: 50%;
     width: 200px;
